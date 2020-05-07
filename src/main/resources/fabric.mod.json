@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "fromage",
+  "version": "${version}",
+  "name": "Fromage",
+  "description": "Adds Fromage to minecraft",
+  "authors": [
+    "Elliot Nash",
+    "Grace Kaufmann"
+  ],
+  "contact": {
+    "homepage": "https://github.com/elliotnash/FromageModFabric.git",
+    "sources": "https://github.com/elliotnash/FromageModFabric.git"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/fromage/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fromage.fromage.Fromage",
+      "fromage.fromage.Fromage"
+    ]
+  },
+  "mixins": [
+    "fromage.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.8.2+build.194",
+    "fabric": "*",
+    "minecraft": "1.15.2"
+  }
+}
