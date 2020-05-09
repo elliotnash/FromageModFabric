@@ -51,9 +51,8 @@ public class CheeseTableBaseCode {
             if (player.getStackInHand(hand).getItem()== Fromage.DIRTY_CHEESE_CLOTH){
                 System.out.println("U  wacked me with dirty cheese cloth");
                 world.setBlockState(pos, state.with(FULL, false));
-                //TODO make custom fromage with food poisioning (daddy fromage)
-                //drops cheese
-                DropperBlock.dropStack(world, pos.up(1), new ItemStack(Fromage.FROMAGE, 1));
+                //drops daddy cheese
+                DropperBlock.dropStack(world, pos.up(1), new ItemStack(Fromage.DADDY_CHEESE, 1));
             }
         }
     }

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cheese_table",
+  "pattern": [
+    "WBW",
+    "WWW",
+    "WCW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:spruce_planks"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+
+  },
+  "result": {
+    "item": "fromage:cheese_table_spruce",
+    "count": 1
+  }
+}

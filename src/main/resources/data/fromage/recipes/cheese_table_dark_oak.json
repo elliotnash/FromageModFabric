@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cheese_table",
+  "pattern": [
+    "WBW",
+    "WWW",
+    "WCW"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "B": {
+      "item": "minecraft:bucket"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    }
+
+  },
+  "result": {
+    "item": "fromage:cheese_table_dark_oak",
+    "count": 1
+  }
+}
