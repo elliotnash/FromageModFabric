@@ -17,7 +17,6 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "fromage.fromage.Fromage",
       "fromage.fromage.Fromage"
     ]
   },
