@@ -1,0 +1,16 @@
+{
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2020-05-09 13:31:29 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2020-05-09 13:30:49 -0700",
+      "minecraft:wooded_hills": "2020-05-09 13:32:41 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 2230
+}

@@ -7,6 +7,9 @@ import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.FoodComponent;
@@ -26,6 +29,8 @@ public class Fromage implements ModInitializer {
 
     public static final Item FROMAGE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(8).saturationModifier(10).build()));
 
+    public static final Item DADDY_CHEESE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(8).saturationModifier(10).statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20*20, 255), 100).statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 20*20, 255),100).build()));
+
     public static final Item CHEESE_CLOTH = new CheeseCloth();
 
     public static final Item DIRTY_CHEESE_CLOTH = new DirtyCheeseCloth();
@@ -35,6 +40,8 @@ public class Fromage implements ModInitializer {
     @Override
     public void onInitialize() {
         Registry.register(Registry.ITEM, new Identifier("fromage", "fromage"), FROMAGE);
+
+        Registry.register(Registry.ITEM, new Identifier("fromage", "daddy_cheese"), DADDY_CHEESE);
 
         Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_cloth"), CHEESE_CLOTH);
 
