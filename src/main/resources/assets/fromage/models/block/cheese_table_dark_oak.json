@@ -1,0 +1,24 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "top": "fromage:block/cheese_table_dark_oak_top",
+    "side": "fromage:block/cheese_table_dark_oak_side",
+    "bottom": "fromage:block/cheese_table_dark_oak_bottom",
+    "particle": "#side"
+  },
+  "elements": [
+    {
+      "name": "Cube",
+      "from": [ 0.0, 0.0, 0.0 ],
+      "to": [ 16.0, 16.0, 16.0 ],
+      "faces": {
+        "north": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "east": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "south": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "west": { "texture": "#side", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "up": { "texture": "#top", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+        "down": { "texture": "#bottom", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+      }
+    }
+  ]
+}

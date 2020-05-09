@@ -35,7 +35,16 @@ public class Fromage implements ModInitializer {
 
     public static final Item DIRTY_CHEESE_CLOTH = new DirtyCheeseCloth();
 
-    public static final Block CHEESE_TABLE_ACACIA = new CheeseTableAcacia();
+    public static final Block.Settings CheeseTableSettings = FabricBlockSettings.of(Material.WOOD).breakByHand(true).breakByTool(FabricToolTags.AXES).sounds(BlockSoundGroup.WOOD).strength(2.5f, 2.5f);
+
+    public static final Block CHEESE_TABLE_ACACIA = new CheeseTable(CheeseTableSettings);
+    public static final Block CHEESE_TABLE_BIRCH = new CheeseTable(CheeseTableSettings);
+    public static final Block CHEESE_TABLE_DARK_OAK = new CheeseTable(CheeseTableSettings);
+    public static final Block CHEESE_TABLE_JUNGLE = new CheeseTable(CheeseTableSettings);
+    public static final Block CHEESE_TABLE_OAK = new CheeseTable(CheeseTableSettings);
+    public static final Block CHEESE_TABLE_SPRUCE = new CheeseTable(CheeseTableSettings);
+
+
 
     @Override
     public void onInitialize() {
@@ -47,9 +56,24 @@ public class Fromage implements ModInitializer {
 
         Registry.register(Registry.ITEM, new Identifier("fromage","dirty_cheese_cloth"),DIRTY_CHEESE_CLOTH);
 
+
         Registry.register(Registry.BLOCK, new Identifier("fromage", "cheese_table_acacia"), CHEESE_TABLE_ACACIA);
         Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_table_acacia"), new BlockItem(CHEESE_TABLE_ACACIA, new Item.Settings().group(ItemGroup.DECORATIONS)));
 
+        Registry.register(Registry.BLOCK, new Identifier("fromage", "cheese_table_birch"), CHEESE_TABLE_BIRCH);
+        Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_table_birch"), new BlockItem(CHEESE_TABLE_BIRCH, new Item.Settings().group(ItemGroup.DECORATIONS)));
+
+        Registry.register(Registry.BLOCK, new Identifier("fromage", "cheese_table_dark_oak"), CHEESE_TABLE_DARK_OAK);
+        Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_table_dark_oak"), new BlockItem(CHEESE_TABLE_DARK_OAK, new Item.Settings().group(ItemGroup.DECORATIONS)));
+
+        Registry.register(Registry.BLOCK, new Identifier("fromage", "cheese_table_jungle"), CHEESE_TABLE_JUNGLE);
+        Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_table_jungle"), new BlockItem(CHEESE_TABLE_JUNGLE, new Item.Settings().group(ItemGroup.DECORATIONS)));
+
+        Registry.register(Registry.BLOCK, new Identifier("fromage", "cheese_table_oak"), CHEESE_TABLE_OAK);
+        Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_table_oak"), new BlockItem(CHEESE_TABLE_OAK, new Item.Settings().group(ItemGroup.DECORATIONS)));
+
+        Registry.register(Registry.BLOCK, new Identifier("fromage", "cheese_table_spruce"), CHEESE_TABLE_SPRUCE);
+        Registry.register(Registry.ITEM, new Identifier("fromage", "cheese_table_spruce"), new BlockItem(CHEESE_TABLE_SPRUCE, new Item.Settings().group(ItemGroup.DECORATIONS)));
 
     }
 

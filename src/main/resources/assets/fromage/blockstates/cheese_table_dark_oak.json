@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "full=false": { "model": "fromage:block/cheese_table_dark_oak"},
+    "full=true": { "model": "fromage:block/cheese_table_dark_oak_full"}
+  }
+}

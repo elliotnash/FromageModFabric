@@ -1,0 +1,17 @@
+{
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2020-05-09 15:31:29 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2020-05-09 15:28:17 -0700",
+      "minecraft:mountains": "2020-05-09 15:30:00 -0700",
+      "minecraft:wooded_hills": "2020-05-09 15:29:52 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 2230
+}
