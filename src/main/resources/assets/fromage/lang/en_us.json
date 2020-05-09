@@ -1,4 +1,13 @@
 {
   "item.fromage.fromage": "Fromage",
-  "item.fromage.cheese_cloth": "Cheese Cloth"
+  "item.fromage.daddy_cheese": "Daddy Cheese",
+  "item.fromage.cheese_bread": "Le Baguette Avec Le Fromage",
+  "item.fromage.cheese_cloth": "Cheese Cloth",
+  "item.fromage.dirty_cheese_cloth": "Dirty Cheese Cloth",
+  "item.fromage.cheese_table_acacia": "Acacia Cheese Table",
+  "item.fromage.cheese_table_birch": "Birch Cheese Table",
+  "item.fromage.cheese_table_dark_oak": "Dark Oak Cheese Table",
+  "item.fromage.cheese_table_jungle": "Jungle Cheese Table",
+  "item.fromage.cheese_table_oak": "Oak Cheese Table",
+  "item.fromage.cheese_table_spruce": "Spruce Cheese Table"
 }
