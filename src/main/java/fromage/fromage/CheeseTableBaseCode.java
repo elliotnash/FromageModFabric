@@ -31,6 +31,16 @@ public class CheeseTableBaseCode {
             }
         }
         if (world.getBlockState(pos).equals(state.with(FULL,true))){
+
+            //runs when dirty cheese cloth
+            if (player.getStackInHand(hand).getItem()== Fromage.DIRTY_CHEESE_CLOTH){
+                System.out.println("U  wacked me with dirty cheese cloth");
+                world.setBlockState(pos, state.with(FULL, false));
+                //drops daddy cheese
+                DropperBlock.dropStack(world, pos.up(1), new ItemStack(Fromage.DADDY_CHEESE, 1));
+            }
+
+
             //runs when clean cheese cloth
             if (player.getStackInHand(hand).getItem()== Fromage.CHEESE_CLOTH){
                 System.out.println("U  wacked me with cheese cloth");
@@ -47,13 +57,7 @@ public class CheeseTableBaseCode {
                 //drops cheese
                 DropperBlock.dropStack(world, pos.up(1), new ItemStack(Fromage.FROMAGE, 1));
             }
-            //runs when dirty cheese cloth
-            if (player.getStackInHand(hand).getItem()== Fromage.DIRTY_CHEESE_CLOTH){
-                System.out.println("U  wacked me with dirty cheese cloth");
-                world.setBlockState(pos, state.with(FULL, false));
-                //drops daddy cheese
-                DropperBlock.dropStack(world, pos.up(1), new ItemStack(Fromage.DADDY_CHEESE, 1));
-            }
+
         }
     }
 }
